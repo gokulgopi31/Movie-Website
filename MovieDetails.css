@@ -1,0 +1,60 @@
+/* MovieDetails.css */
+
+.movie-details-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding-top: 2rem; /* Add space from the top */
+  }
+  
+  .movie-details-img-container {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-right: 2rem;
+  }
+  
+  .movie-details-img {
+    width: 100%;
+    height: auto; /* Remove the height property to maintain aspect ratio */
+    object-fit: contain;
+  }
+  
+  .movie-details-details-container {
+    flex: 1;
+    padding: 2rem;
+    margin-top: 2rem; /* Add space from the top */
+  }
+  
+  .movie-title {
+    font-size: 2rem;
+    margin-bottom: 1rem; /* Add some space below the title */
+    margin-top: 0; /* Remove top margin to make the title visible */
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .detail-value {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .movie-details-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .movie-details-img-container,
+    .movie-details-details-container {
+      flex: 0 0 100%;
+      padding: 0;
+    }
+  }
+  
